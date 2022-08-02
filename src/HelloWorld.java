@@ -53,5 +53,24 @@ public class HelloWorld {
 //11. Try to create a variable named class. What happens?it doesn't work because it's a reserved word
 //        string class = "will this work?"
 //12. Object is the most generic type in Java. You can assign any value to a variable of type Object. What do you think will happen when the following code is run?
+//        String theNumberThree = "three";
+//        Object o = theNumberThree;
+//        int three = (int) o;
+
+
+//13.   rewrite
+//      int x = 4;
+//      x = x + 5;
+//      x+=9; < idk ask
+
+//      int x = 3;
+//      int y = 4;
+//      y = y * x;
+
+//      int x = 10;
+//      int y = 2;
+//      x = x / y;
+//      y = y - x;
+//
     }
 }
