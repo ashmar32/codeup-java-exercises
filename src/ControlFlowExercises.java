@@ -106,53 +106,53 @@ public static void main(String[] args) {
 //        }
 //        System.out.println("|--------|----------|----------|");
 
-    boolean confirmation = true;
+        boolean confirmation;
 
-    do {
+        do {
 
-        System.out.print("Please enter a whole number grade: ");
-        int grade = scanner.nextInt();
+            System.out.print("Please enter a whole number grade: ");
+            int grade = scanner.nextInt();
 
-        if (grade >= 90) {
-            System.out.print("A");
-            if (grade > 95) {
-                System.out.print("+");
-            } else if (grade < 95) {
-                System.out.print("-");
-            }
-            System.out.println();
-        } else if (grade >= 80) {
-            System.out.print("B");
-            if (grade > 85) {
-                System.out.print("+");
-            } else if (grade < 85) {
-                System.out.print("-");
-            }
-            System.out.println();
-        } else if (grade >= 70) {
-            System.out.print("C");
-            if (grade > 75) {
-                System.out.print("+");
-            } else if (grade < 75) {
-                System.out.print("-");
-            }
-            System.out.println();
-        } else if (grade >= 60) {
-            System.out.print("D");
-            if (grade > 65) {
-                System.out.print("+");
-            } else if (grade < 65) {
-                System.out.print("-");
-            }
-            System.out.println();
-        } else System.out.println("F");
+            if (grade >= 90) {
+                System.out.print("A");
+                if (grade > 95) {
+                    System.out.print("+");
+                } else if (grade < 95) {
+                    System.out.print("-");
+                }
+                System.out.println();
+            } else if (grade >= 80) {
+                System.out.print("B");
+                if (grade > 85) {
+                    System.out.print("+");
+                } else if (grade < 85) {
+                    System.out.print("-");
+                }
+                System.out.println();
+            } else if (grade >= 70) {
+                System.out.print("C");
+                if (grade > 75) {
+                    System.out.print("+");
+                } else if (grade < 75) {
+                    System.out.print("-");
+                }
+                System.out.println();
+            } else if (grade >= 60) {
+                System.out.print("D");
+                if (grade > 65) {
+                    System.out.print("+");
+                } else if (grade < 65) {
+                    System.out.print("-");
+                }
+                System.out.println();
+            } else System.out.println("F");
 
-        System.out.print("Continue? [y/n]: ");
-        String userInput = scanner.next();
+            System.out.print("Continue? [y/n]: ");
+            String userInput = scanner.next();
 
-        confirmation = userInput.equals("y");
-        } while (confirmation) ;
+            confirmation = userInput.equals("y");
+            } while (confirmation) ;
+        }
     }
-}
 
 
