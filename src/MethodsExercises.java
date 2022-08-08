@@ -13,7 +13,7 @@ public class MethodsExercises {
         System.out.println(division(10,5));
         System.out.println(modulus(10,5));
         System.out.println(newMultiplication(10,5));
-        getNumber(10,20);
+        getNumber(1,20);
         factorial();
         rollDice();
 
@@ -90,28 +90,29 @@ public class MethodsExercises {
 // Calculate the factorial of a number.
     public static void factorial() {
         int factorialNumber = getNumber(1,10);
-        int storedNumber = 1;
+        int factorial = 1;
 
         System.out.printf("%s! = ", factorialNumber);
         for (int i = 1; i <= factorialNumber; i++) {
             if (factorialNumber == i) {
-                storedNumber = i * storedNumber;
+                factorial = i * factorial;
                 System.out.printf("%s ", i);
             } else {
-                storedNumber = i * storedNumber;
+                factorial = i * factorial;
                 System.out.printf("%s x ", i);
             }
 
         }
-        System.out.printf(" = %s\n", storedNumber);
+        System.out.printf(" = %s\n", factorial);
     }
 
     public static void rollDice() {
-        System.out.print("Enter the number of sides of the dice set: ");
+        System.out.print("Enter the number of sides on the dice set: ");
+        System.out.println("Do you want to roll the dice [y/n] ?");
 
         // Initializing the Scanner object to read input
         Scanner input = new Scanner(System.in);
-        int numberOfDice = input.nextInt();
+        int numberOfSides = input.nextInt();
 
         // Initializing the Random object for
         // generating random numbers
@@ -121,7 +122,7 @@ public class MethodsExercises {
         int total = 0;
         int randomNumber = 0;
 
-        for (int i = 0; i < numberOfDice; i++) {
+        for (int i = 0; i < numberOfSides; i++) {
 
             // Generating the random number and storing it
             // in the 'randomNumber' variable
