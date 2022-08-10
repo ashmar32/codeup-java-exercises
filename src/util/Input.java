@@ -29,7 +29,17 @@ public class Input {
     }
 
     double getDouble(double min, double max) {
-        return getDouble(min, max);
+        System.out.println("Enter a number 1-10:");
+        double userInput = scanner.nextDouble();
+        if (userInput <= max && userInput >= min) {
+            System.out.println("This is your number: " + userInput);
+            return userInput;
+        } else {
+            return getDouble(min,max);
+        }
+    }
+    double getDouble() {
+        return scanner.nextDouble();
     }
 
 
@@ -40,12 +50,16 @@ public class Input {
         Input in = new Input();
         System.out.println("enter a string" );
         System.out.println(in.getString());
-        System.out.println("Continue [y/n]?");
+        System.out.println("[y/n]?");
         System.out.println(in.yesNo());
 //        System.out.println("enter min, max");
         System.out.println(in.getInt(1,10));
         System.out.println("enter an int");
         System.out.println("your int is: " + in.getInt());
+//        System.out.println("enter the double: ");
+        System.out.println(in.getDouble(1,10));
+        System.out.println("plain double: ");
+        System.out.println("this is the plain double: " + in.getDouble());
 
     }
 
