@@ -8,12 +8,12 @@ public class Input {
     public String getString() {
         return scanner.nextLine();
     }
-    boolean yesNo() {
+    public boolean yesNo() {
 //        if scanner input = y or yes , then return true or else return false
         String answer = scanner.nextLine();
         return answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("y");
     }
-    int getInt(int min, int max) {
+    public int getInt(int min, int max) {
         System.out.println("Enter a number 1-10:");
         int userInput = scanner.nextInt();
         if (userInput <= max && userInput >= min) {
@@ -24,11 +24,11 @@ public class Input {
         }
 
     }
-    int getInt() {
+    public int getInt() {
         return scanner.nextInt();
     }
 
-    double getDouble(double min, double max) {
+    public double getDouble(double min, double max) {
         System.out.println("Enter a number 1-10:");
         double userInput = scanner.nextDouble();
         if (userInput <= max && userInput >= min) {
@@ -38,7 +38,7 @@ public class Input {
             return getDouble(min,max);
         }
     }
-    double getDouble() {
+    public double getDouble() {
         return scanner.nextDouble();
     }
 
