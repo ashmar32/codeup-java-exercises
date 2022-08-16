@@ -41,8 +41,6 @@ public class GradesApplication {
         students.put("chickie3", student3);
 
 
-//        System.out.println("student2.avgGrade() = " + student2.avgGrade());
-
 
         while (true) {
             System.out.println("Welcome!");
