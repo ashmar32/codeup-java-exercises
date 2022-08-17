@@ -25,7 +25,14 @@ public class Input {
 
     }
     public int getInt() {
-        return scanner.nextInt();
+        while (true) {
+            try {
+                return Integer.parseInt(getString());
+            } catch (NumberFormatException e) {
+                System.out.println("This is not an int");
+            }
+
+        }
     }
 
     public double getDouble(double min, double max) {
@@ -39,7 +46,13 @@ public class Input {
         }
     }
     public double getDouble() {
-        return scanner.nextDouble();
+        while (true) {
+            try {
+                return Double.parseDouble(getString());
+            } catch (NumberFormatException e) {
+                System.out.println("this isn't a double");
+            }
+        }
     }
 
 
@@ -48,18 +61,20 @@ public class Input {
 
     public static void main(String[] args) {
         Input in = new Input();
-        System.out.println("enter a string" );
-        System.out.println(in.getString());
-        System.out.println("[y/n]?");
-        System.out.println(in.yesNo());
+//        System.out.println("enter a string" );
+//        System.out.println(in.getString());
+//        System.out.println("[y/n]?");
+//        System.out.println(in.yesNo());
 //        System.out.println("enter min, max");
-        System.out.println(in.getInt(1,10));
+//        System.out.println(in.getInt(1,10));
         System.out.println("enter an int");
         System.out.println("your int is: " + in.getInt());
+        System.out.println("enter a double");
+        System.out.println("this is your double: " + in.getDouble());
 //        System.out.println("enter the double: ");
-        System.out.println(in.getDouble(1,10));
-        System.out.println("plain double: ");
-        System.out.println("this is the plain double: " + in.getDouble());
+////        System.out.println(in.getDouble(1,10));
+//        System.out.println("plain double: ");
+//        System.out.println("this is the plain double: " + in.getDouble());
 
     }
 
