@@ -26,6 +26,7 @@ public class Input {
     }
     public int getInt() {
         while (true) {
+
             try {
                 return Integer.parseInt(getString());
             } catch (NumberFormatException e) {

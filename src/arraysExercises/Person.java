@@ -1,4 +1,4 @@
-package ArraysExercises;
+package arraysExercises;
 
 //    Create Person class inside of src
 public class Person {
