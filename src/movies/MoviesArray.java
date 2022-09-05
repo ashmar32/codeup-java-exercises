@@ -1,4 +1,5 @@
 package movies;
+//Download the MoviesArray file and save it as MoviesArray.java inside of movies. This class has a static method named findAll that will return an array of Movie objects.
 
 public class MoviesArray {
     public static Movie[] findAll() {
