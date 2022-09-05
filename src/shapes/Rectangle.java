@@ -1,27 +1,29 @@
 package shapes;
+// 5. Change your existing Rectangle class to inherit from Quadrilateral and implement Measurable.
+// IntelliJ can automatically create the skeleton of all the methods that need to be implemented.
+public class Rectangle extends Quadrilateral implements Measurable {
 
-public class Rectangle {
-    protected double length;
-    protected double width;
-//constructor
     public Rectangle(double length, double width) {
-        this.length = length;
-        this.width = width;
+        super(length, width);
     }
 
-    public double getArea() {
-        double area = length * width;
-        return area;
-    }
-
+    @Override
     public double getPerimeter() {
-        double perimeter = 2 * length + 2 * width;
-        return perimeter;
+        return 0;
+    }
+
+    @Override
+    public double getArea() {
+        return 0;
+    }
+
+    @Override
+    public void setLength(double length) {
 
     }
 
-    public static void main(String[] args) {
-        Rectangle testRec = new Rectangle(12.5,6);
-        System.out.println(testRec.getArea());
+    @Override
+    public void setWidth(double width) {
+
     }
 }
